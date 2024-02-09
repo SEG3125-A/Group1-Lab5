@@ -23,7 +23,7 @@
 
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Quick and easy!</a>
+          <a class="navbar-brand" href="#">Quick and easy repairs!</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -70,18 +70,31 @@
     </div>
 
     <!-- About Us Section -->
+    <!-- this is a nested nightmare, but it works -->
     <div id="aboutus" class="card">
         <div class="card about-us-card">
-            <div class="row">
-                <div class="col-md-6">
-                    <!-- Picture of the store -->
-                    <img src="./picture/store_image.jpg" class="img-thumbnail" alt="Store Image">
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <!-- About Us content -->
-                    <div class="p-4 text-center">
-                        <h2>About Us</h2>
-                        <p>Welcome to QuifiX, your quick and easy bicycle repair store. At QuifiX, we understand the importance of keeping your bike in top condition for your adventures. Our team of experienced bike mechanics is dedicated to providing fast and reliable repair services to get you back on the road in no time.</p>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <!-- image row for centering -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <!-- store image -->
+                                <img src="./picture/store_image.jpg" class="img-thumbnail" alt="Store Image">
+                            </div>
+                        </div>
+
+                        <!-- about us content container -->
+                        <div class="row">
+                            <div class="col text-center">
+                                <!-- about us content -->
+                                <div class="p-4">
+                                    <h2>About Us</h2>
+                                    <p>Welcome to QuifiX, your quick and easy bicycle repair store. At QuifiX, we understand the importance of keeping your bike in top condition for your adventures. Our team of experienced bike mechanics is dedicated to providing fast and reliable repair services to get you back on the road in no time.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
