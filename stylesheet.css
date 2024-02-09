@@ -26,3 +26,6 @@
   align-items: center;
   overflow: auto;
 }
+.custom-movement-right{
+  margin-left: 9px;
+}
