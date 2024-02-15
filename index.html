@@ -10,6 +10,9 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+    <!-- JQeury -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 
 
@@ -64,6 +67,24 @@
           </div>
         </div>
     </nav>
+    <!-- scrpit to close the menu once clicked -->
+    <script>
+        $(document).ready(function() {
+            $('.offcanvas-body .nav-link').not('.dropdown-toggle').click(function() {
+                closeOffcanvas();
+            });
+            $('.offcanvas-body .dropdown-item').click(function() {
+                closeOffcanvas();
+            });
+            function closeOffcanvas() {
+                var offcanvasElement = $('#offcanvasNavbar');
+                var bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+                bsOffcanvas.hide();
+            }
+        });
+        </script>
+        
+        
       
     <div class="custom-movement-right">
         <h2>Your local quick and easy bike repair shop</h2>
@@ -223,6 +244,15 @@
                                         <option>Full Bike Overhaul</option>
                                       </select>
                                     </div>
+                                    <div class="form-group">
+                                        <label for="mechanic">Select Mechanic</label>
+                                        <select class="form-control" id="mechanic">
+                                          <option>Select a mechanic</option>
+                                          <option>Joe Biden</option>
+                                          <option>Nikki Haley</option>
+                                          <option>Donald Trump</option>
+                                        </select>
+                                      </div>
                                     <div class="md-form md-outline input-with-post-icon datepicker">
                                         <label for="example">Select a date</label>
                                         <i class="fas fa-calendar input-prefix"></i>
@@ -249,7 +279,7 @@
                                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                     </div>
                                     <div class="card-footer service-footer">
-                                        <a class="btn btn-primary">Submit</a>
+                                        <button type="button" class="btn btn-primary">Submit</button>
                                     </div>
                                 </form>
                             </div>
@@ -261,6 +291,55 @@
         </div>
 
     </div>
+
+    <!-- Ask for Credit Card -->
+    
+    <!-- Ask for Credit Card -->
+    <div id="creditCardInfo" class="container mt-5" style="display:none; scroll-margin-top: 70px;">
+        <div class="card">
+            <div class="card-body">
+                <h2>Credit Card Information</h2>
+                <!-- Credit card form fields -->
+                <form>
+                    <div class="mb-3">
+                        <label for="cardNumber" class="form-label">Card Number:</label>
+                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="expirationDate" class="form-label">Expiration Date:</label>
+                        <input type="month" class="form-control" id="expirationDate" name="expirationDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cvv" class="form-label">CVV:</label>
+                        <input type="text" class="form-control" id="cvv" name="cvv" required>
+                    </div>
+                    <button type="button" id="finalSubmitBtn" class="btn btn-primary">Submit Appointment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.card-footer .btn-primary').on('click', function(e) {
+            e.preventDefault(); 
+            var email = $('#exampleFormControlInput1').val().trim();
+            var service = $('#exampleFormControlSelect1').val();
+            var mechanic = $('#mechanic').val();
+            var date = $('#example').val().trim();
+            var time = $('#timeExample').val().trim();
+            if (email && service !== "Select a service" && mechanic !== "Select a mechanic" && date && time) {
+                $('#creditCardInfo').slideDown(); 
+            } else {
+                alert('Please fill out all required fields and select a service.');
+            }
+        });
+    });
+    </script>
+
+
+        
     <!-- Contact Us Section -->
     <div id="contactus" class="container mt-5">
         <div class="card">
