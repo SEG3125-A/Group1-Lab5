@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="stylesheet.css" rel="stylesheet">
-    <!-- Font Awesome --><!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
-    <!-- JQeury -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="stylesheet.css" rel="stylesheet">
+<!-- Font Awesome --><!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+<!-- MDB -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+<!-- JQeury -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 <head>
-<title>QuifiX</title>
+    <title>QuifiX</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 </head>
 <body style="padding-top: 70px;">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"> QuifiX quick and easy repairs!</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+<nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"> QuifiX quick and easy repairs!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#aboutus">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#ourteam">Our Team</a>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Our Services
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#services">Services</a></li>
-                    <li><a class="dropdown-item" href="#bookappointment">Book Appointment</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contactus">Contact Us</a>
-                  </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ourteam">Our Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#services">Services</a></li>
+                            <li><a class="dropdown-item" href="#bookappointment">Book Appointment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-          </div>
         </div>
-    </nav>
-    <!-- scrpit to close the menu once clicked -->
-    <script>
+    </div>
+</nav>
+<!-- scrpit to close the menu once clicked -->
+<script>
         $(document).ready(function() {
             $('.offcanvas-body .nav-link').not('.dropdown-toggle').click(function() {
                 closeOffcanvas();
@@ -82,188 +85,201 @@
                 bsOffcanvas.hide();
             }
         });
-        </script>
-        
-        
-      
-    <div class="custom-movement-right">
-        <h2>Your local quick and easy bike repair shop</h2>
+
+</script>
+
+
+<div class="custom-movement-right">
+    <h2>Your local quick and easy bike repair shop</h2>
+</div>
+
+<!-- About Us Section -->
+<!-- this is a nested nightmare, but it works -->
+<div id="aboutus" class="card">
+    <div class="card about-us-card">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <!-- image row for centering -->
+                    <div class="row">
+                        <div class="col text-center">
+                            <!-- store image -->
+                            <img src="./picture/store_image.jpg" class="img-thumbnail" alt="Store Image">
+                        </div>
+                    </div>
+
+                    <!-- about us content container -->
+                    <div class="row">
+                        <div class="col text-center">
+                            <!-- about us content -->
+                            <div class="p-4">
+                                <h2>About Us</h2>
+                                <p>Welcome to QuifiX, your quick and easy bicycle repair store. At QuifiX, we understand
+                                    the importance of keeping your bike in top condition for your adventures. Our team
+                                    of experienced bike mechanics is dedicated to providing fast and reliable repair
+                                    services to get you back on the road in no time.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
-    <!-- About Us Section -->
-    <!-- this is a nested nightmare, but it works -->
-    <div id="aboutus" class="card">
-        <div class="card about-us-card">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <!-- image row for centering -->
-                        <div class="row">
-                            <div class="col text-center">
-                                <!-- store image -->
-                                <img src="./picture/store_image.jpg" class="img-thumbnail" alt="Store Image">
-                            </div>
-                        </div>
 
-                        <!-- about us content container -->
-                        <div class="row">
-                            <div class="col text-center">
-                                <!-- about us content -->
-                                <div class="p-4">
-                                    <h2>About Us</h2>
-                                    <p>Welcome to QuifiX, your quick and easy bicycle repair store. At QuifiX, we understand the importance of keeping your bike in top condition for your adventures. Our team of experienced bike mechanics is dedicated to providing fast and reliable repair services to get you back on the road in no time.</p>
-                                </div>
-                            </div>
-                        </div>
+<!-- Mechanics -->
+<div id="ourteam" class="container" style="scroll-margin-top: 70px;">
+    <h2 class="mt-4">Our Bike Mechanics</h2>
+    <div class="row mt">
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="avatar-container">
+                    <img src="./picture/placeholder_avatar.png" class="card-img-top" alt="Mechanic Avatar">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Joe Biden</h5>
+                    <p class="card-text">Bike Mechanic</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="avatar-container">
+                    <img src="./picture/placeholder_avatar.png" class="card-img-top" alt="Mechanic Avatar">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Nikki Haley</h5>
+                    <p class="card-text">Senior Bike Mechanic</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="avatar-container">
+                    <img src="./picture/placeholder_avatar.png" class="card-img-top" alt="Mechanic Avatar">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Donald Trump</h5>
+                    <p class="card-text">Master Bike Mechanic</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more mechanics here -->
+    </div>
+</div>
 
+<!-- Services Section -->
+<div id="services" class="card mt-5" style="scroll-margin-top: 40px;">
+    <div class="card-body">
+
+        <div class="card-title">
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="row">
+
+            <!-- Service Item 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./picture/tune_up.png" class="card-img-top service-img" alt="Tune-Up">
+                    <div class="card-body service-body">
+                        <h5 class="card-title">Tune-Up</h5>
+                        <p class="card-text">
+                            Includes a thorough inspection and adjustment of your bike's components to ensure optimal
+                            performance. We'll adjust gears and brakes, true wheels, lubricate drivetrain components,
+                            and check for any necessary adjustments or repairs.
+                        </p>
+                    </div>
+                    <div class="card-footer service-footer">
+                        <p class="card-text">Starting Price: $50 </p>
+                        <a href="#" class="btn btn-primary">Add</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Item 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./picture/flat_tire_repair.jpg" class="card-img-top service-img" alt="Flat Tire Repair">
+                    <div class="card-body service-body">
+                        <h5 class="card-title">Flat Tire Repair</h5>
+                        <p class="card-text">Our flat tire repair service includes removing the wheel, inspecting the
+                            tire and tube for damage, repairing or replacing the tube, and reinstalling the wheel with
+                            proper inflation.</p>
+                    </div>
+                    <div class="card-footer service-footer">
+                        <p class="card-text">Starting Price: $80</p>
+                        <a href="#" class="btn btn-primary">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./picture/bike_overhaul.jpg" class="card-img-top service-img" alt="Full Bike Overhaul">
+                    <div class="card-body service-body">
+                        <h5 class="card-title">Full Bike Overhaul</h5>
+                        <p class="card-text">Our full bike overhaul service is a comprehensive maintenance package that
+                            includes disassembling, cleaning, and lubricating all major components of your bike. We'll
+                            inspect and adjust bearings, replace worn-out parts as needed, true wheels, adjust brakes
+                            and gears, and ensure your bike is in top condition.</p>
+                    </div>
+                    <div class="card-footer service-footer">
+                        <p class="card-text">Starting Price: $150</p>
+                        <a href="#" class="btn btn-primary">Add</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-
-    <!-- Mechanics -->
-    <div id="ourteam" class="container" style="scroll-margin-top: 70px;">
-        <h2 class="mt-4">Our Bike Mechanics</h2>
-        <div class="row mt">
-            <div class="col-md-4">
-                <div class="card text-center">
-                    <div class="avatar-container">
-                        <img src="./picture/placeholder_avatar.png" class="card-img-top" alt="Mechanic Avatar">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Joe Biden</h5>
-                        <p class="card-text">Bike Mechanic</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-center">
-                    <div class="avatar-container">
-                        <img src="./picture/placeholder_avatar.png" class="card-img-top" alt="Mechanic Avatar">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nikki Haley</h5>
-                        <p class="card-text">Senior Bike Mechanic</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-center">
-                    <div class="avatar-container">
-                        <img src="./picture/placeholder_avatar.png" class="card-img-top" alt="Mechanic Avatar">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Donald Trump</h5>
-                        <p class="card-text">Master Bike Mechanic</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more mechanics here -->
-        </div>
-    </div>
-
-    <!-- Services Section -->
-    <div id="services" class="card mt-5" style="scroll-margin-top: 40px;">
+<!-- Book Appointment -->
+<div id="bookappointment" class="container mt-5" style="scroll-margin-top: 70px;">
+    <div class="card">
         <div class="card-body">
-
-            <div class="card-title">
-                <h2>Our Services</h2>
-            </div>
-
             <div class="row">
-
-                <!-- Service Item 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="./picture/tune_up.png" class="card-img-top service-img" alt="Tune-Up">
-                        <div class="card-body service-body">
-                            <h5 class="card-title">Tune-Up</h5>
-                            <p class="card-text">
-                                Includes a thorough inspection and adjustment of your bike's components to ensure optimal performance. We'll adjust gears and brakes, true wheels, lubricate drivetrain components, and check for any necessary adjustments or repairs.
-                            </p>
-                        </div>
-                        <div class="card-footer service-footer">
-                            <p class="card-text">Starting Price: $50 </p>
-                            <a href="#" class="btn btn-primary">Add</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Service Item 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="./picture/flat_tire_repair.jpg" class="card-img-top service-img" alt="Flat Tire Repair">
-                        <div class="card-body service-body">
-                            <h5 class="card-title">Flat Tire Repair</h5>
-                            <p class="card-text">Our flat tire repair service includes removing the wheel, inspecting the tire and tube for damage, repairing or replacing the tube, and reinstalling the wheel with proper inflation.</p>
-                        </div>
-                        <div class="card-footer service-footer">
-                            <p class="card-text">Starting Price: $80</p>
-                            <a href="#" class="btn btn-primary">Add</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="./picture/bike_overhaul.jpg" class="card-img-top service-img" alt="Full Bike Overhaul">
-                        <div class="card-body service-body">
-                            <h5 class="card-title">Full Bike Overhaul</h5>
-                            <p class="card-text">Our full bike overhaul service is a comprehensive maintenance package that includes disassembling, cleaning, and lubricating all major components of your bike. We'll inspect and adjust bearings, replace worn-out parts as needed, true wheels, adjust brakes and gears, and ensure your bike is in top condition.</p>
-                        </div>
-                        <div class="card-footer service-footer">
-                            <p class="card-text">Starting Price: $150</p>
-                            <a href="#" class="btn btn-primary">Add</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Book Appointment -->
-    <div id="bookappointment" class="container mt-5" style="scroll-margin-top: 70px;">
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <h2>Book Appointment</h2>
-                    <div class="col-md-6">
-                        <div class="card-title">
-                            <div>
-                                <form>
-                                    <div class="form-group">
-                                      <label for="exampleFormControlInput1">Enter your email</label>
-                                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="exampleFormControlSelect1">Select a service</label>
-                                      <select class="form-control" id="exampleFormControlSelect1">
+                <h2>Book Appointment</h2>
+                <div class="col-md-6">
+                    <div class="card-title">
+                        <div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Enter your email</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                           placeholder="name@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Select a service</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
                                         <option>Select a service</option>
                                         <option>Tune-Up</option>
                                         <option>Flat Tire Repair</option>
                                         <option>Full Bike Overhaul</option>
-                                      </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="mechanic">Select Mechanic</label>
-                                        <select class="form-control" id="mechanic">
-                                          <option>Select a mechanic</option>
-                                          <option>Joe Biden</option>
-                                          <option>Nikki Haley</option>
-                                          <option>Donald Trump</option>
-                                        </select>
-                                      </div>
-                                    <div class="md-form md-outline input-with-post-icon datepicker">
-                                        <label for="example">Select a date</label>
-                                        <i class="fas fa-calendar input-prefix"></i>
-                                        <input placeholder="Select date" type="date" id="example" class="form-control">
-                                      </div>
-                                      <div id="time-picker-example" class="md-form md-outline input-with-post-icon timepicker">
-                                        <label for="timeExample">Choose a time</label>
-                                        <i class="fas fa-clock input-prefix"></i>
-                                        <input placeholder="Select time" type="time" id="timeExample" class="form-control">                                      </div>
-                                    </div>
-                                    <script>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mechanic">Select Mechanic</label>
+                                    <select class="form-control" id="mechanic">
+                                        <option>Select a mechanic</option>
+                                        <option>Joe Biden</option>
+                                        <option>Nikki Haley</option>
+                                        <option>Donald Trump</option>
+                                    </select>
+                                </div>
+                                <div class="md-form md-outline input-with-post-icon datepicker">
+                                    <label for="example">Select a date</label>
+                                    <i class="fas fa-calendar input-prefix"></i>
+                                    <input placeholder="Select date" type="date" id="example" class="form-control">
+                                </div>
+                                <div id="time-picker-example"
+                                     class="md-form md-outline input-with-post-icon timepicker">
+                                    <label for="timeExample">Choose a time</label>
+                                    <i class="fas fa-clock input-prefix"></i>
+                                    <input placeholder="Select time" type="time" id="timeExample" class="form-control">
+                                </div>
+                        </div>
+                        <script>
                                         document.getElementById('timeExample').addEventListener('change', function(e) {
                                           const value = e.target.value;
                                           const [hours, minutes] = value.split(':').map(num => parseInt(num, 10));
@@ -272,55 +288,56 @@
                                             e.target.value = ''; // Resets the input
                                           }
                                         });
-                                      </script>
-                                    
-                                    <div class="form-group">
-                                      <label for="exampleFormControlTextarea1">Comments</label>
-                                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-                                    <div class="card-footer service-footer">
-                                        <button type="button" class="btn btn-primary">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
+
+                        </script>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Comments</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
+                        <div class="card-footer service-footer">
+                            <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
-
-        </div>
-
-    </div>
-
-    <!-- Ask for Credit Card -->
-    
-    <!-- Ask for Credit Card -->
-    <div id="creditCardInfo" class="container mt-5" style="display:none; scroll-margin-top: 70px;">
-        <div class="card">
-            <div class="card-body">
-                <h2>Credit Card Information</h2>
-                <!-- Credit card form fields -->
-                <form>
-                    <div class="mb-3">
-                        <label for="cardNumber" class="form-label">Card Number:</label>
-                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="expirationDate" class="form-label">Expiration Date:</label>
-                        <input type="month" class="form-control" id="expirationDate" name="expirationDate" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="cvv" class="form-label">CVV:</label>
-                        <input type="text" class="form-control" id="cvv" name="cvv" required>
-                    </div>
-                    <button type="button" id="finalSubmitBtn" class="btn btn-primary">Submit Appointment</button>
-                </form>
-            </div>
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
+</div>
+
+</div>
+
+<!-- Ask for Credit Card -->
+
+<!-- Ask for Credit Card -->
+<div id="creditCardInfo" class="container mt-5" style="display:none; scroll-margin-top: 70px;">
+    <div class="card">
+        <div class="card-body">
+            <h2>Credit Card Information</h2>
+            <!-- Credit card form fields -->
+            <form>
+                <div class="mb-3">
+                    <label for="cardNumber" class="form-label">Card Number:</label>
+                    <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
+                </div>
+                <div class="mb-3">
+                    <label for="expirationDate" class="form-label">Expiration Date:</label>
+                    <input type="month" class="form-control" id="expirationDate" name="expirationDate" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cvv" class="form-label">CVV:</label>
+                    <input type="text" class="form-control" id="cvv" name="cvv" required>
+                </div>
+                <button type="button" id="finalSubmitBtn" class="btn btn-primary">Submit Appointment</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
     $(document).ready(function() {
         $('.card-footer .btn-primary').on('click', function(e) {
             e.preventDefault(); 
@@ -336,41 +353,42 @@
             }
         });
     });
-    </script>
+
+</script>
 
 
-        
-    <!-- Contact Us Section -->
-    <div id="contactus" class="container mt-5">
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <h2>Contact Us</h2>
-                    <div class="col-md-6">
-                        <div class="card-title">
+<!-- Contact Us Section -->
+<div id="contactus" class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <h2>Contact Us</h2>
+                <div class="col-md-6">
+                    <div class="card-title">
 
-                        </div>
-                        <p>109-75 Laurier Ave E<br>
-                            Ottawa, ON K1S 5L5<br>
-                            Canada</p>
-                        <p>Phone: +1 (613) 562-5700</p>
-                        <p>Email: QuifiX@outlook.com</p>
                     </div>
-                    <div class="col-md-6">
-                        <img src="./picture/location.png" class="img-thumbnail" alt="Map Screenshot">
-                    </div>
+                    <p>109-75 Laurier Ave E<br>
+                        Ottawa, ON K1S 5L5<br>
+                        Canada</p>
+                    <p>Phone: +1 (613) 562-5700</p>
+                    <p>Email: QuifiX@outlook.com</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./picture/location.png" class="img-thumbnail" alt="Map Screenshot">
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
-    <script>
+<script>
         $( function() {
           $( ".datepicker" ).datepicker();
           inline: true
         } );
-      </script>
+
+</script>
 
 </body>
 </html>
