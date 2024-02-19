@@ -94,7 +94,7 @@
 <!-- About Us Section -->
 <div id="aboutus" class="card">
     <div class="card about-us-card position-relative">
-        <img src="./picture/store_image.jpg" class="img-fluid" alt="Store Image"> <!-- Use "img-fluid" class to make the image 100% width -->
+        <img src="./picture/store_image.jpg" class="img-fluid" alt="Store Image">
 
         <!-- Semi-transparent column at the bottom -->
         <div class="position-absolute bottom-0 start-0 end-0 p-4" style="background-color: rgba(0, 0, 0, 0.5);">
@@ -314,14 +314,14 @@
 <script>
     $(document).ready(function() {
         $('.card-footer .btn-primary').on('click', function(e) {
-            e.preventDefault(); 
+            e.preventDefault();
             var email = $('#exampleFormControlInput1').val().trim();
             var service = $('#exampleFormControlSelect1').val();
             var mechanic = $('#mechanic').val();
             var date = $('#example').val().trim();
             var time = $('#timeExample').val().trim();
             if (email && service !== "Select a service" && mechanic !== "Select a mechanic" && date && time) {
-                $('#creditCardInfo').slideDown(); 
+                $('#creditCardInfo').slideDown();
             } else {
                 alert('Please fill out all required fields and select a service.');
             }
